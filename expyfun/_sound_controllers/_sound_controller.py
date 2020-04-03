@@ -327,7 +327,7 @@ def _import_backend(backend):
         raise ValueError('Unknown sound card backend %r, must be one of %s'
                          % (backend, ('auto',) + _BACKENDS))
     lib = importlib.import_module('._' + backend,
-                                  package='expyfun._sound_controllers')
+                                  package='expyfun.expyfun._sound_controllers')
     return lib, backend
 
 
